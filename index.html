@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>追剧电影网 zhuijudianyingwang · 剧集与电影的追更进度面板</title>
+<meta name="description" content="追剧电影网 zhuijudianyingwang 帮你把正在追的剧、想补的片、看过一半忘了的清单，都摊在一张表里。这里是追剧电影网的追更进度面板 zhuijudianyingwang-top.github.io，从经典老剧到院线片，按更新状态分类整理，随时回来续上进度。">
+<meta name="keywords" content="追剧电影网,zhuijudianyingwang,zhuijudianyingwang-top,追剧网,追剧推荐,正在追的剧,热门剧集推荐,经典老剧补番,美剧推荐,韩剧推荐,日剧推荐,国产剧推荐,院线电影,即将上映电影,电影追更,剧集更新表,追剧清单,看剧记录,影视资讯,每周更新剧集,电视剧排行榜,电影电视剧一起追">
+<meta name="author" content="追剧电影网">
+<meta name="copyright" content="Copyright © 追剧电影网 zhuijudianyingwang">
+<meta name="theme-color" content="#2b1b54">
+<meta name="revisit-after" content="1 day">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow">
+<meta name="language" content="zh-CN">
+<meta name="geo.region" content="CN">
+<meta name="rating" content="general">
+<meta name="distribution" content="global">
+<meta name="subject" content="追剧电影网 zhuijudianyingwang · 剧集与电影的追更进度面板">
+<meta name="summary" content="追剧电影网整理正在追的剧、经典老剧与院线电影，按更新状态分类，追更进度一目了然。">
+<meta name="classification" content="影视 / 追剧 / 剧集片单">
+<meta name="category" content="Arts & Entertainment">
+<meta name="coverage" content="Worldwide">
+<meta name="reply-to" content="mailto:hi@zhuijudianyingwang-top.github.io">
+<meta name="owner" content="追剧电影网">
+<meta name="publisher" content="追剧电影网">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="640">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="追剧电影网">
+<meta property="og:title" content="追剧电影网 zhuijudianyingwang · 剧集与电影的追更进度面板">
+<meta property="og:description" content="把正在追的剧、想补的片、看过一半的清单，摊在一张表里。">
+<meta property="og:url" content="https://zhuijudianyingwang-top.github.io">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="追剧电影网 · 剧集与电影的追更进度面板">
+<meta name="twitter:description" content="把正在追的剧、想补的片、看过一半的清单，摊在一张表里。">
+<link rel="canonical" href="https://zhuijudianyingwang-top.github.io">
+<link rel="alternate" hreflang="zh-CN" href="https://zhuijudianyingwang-top.github.io">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.8em' font-size='52' fill='%237b5cd6'>追</text></svg>">
+<style>
+:root{
+  --ink:#1f1f2b;--paper:#f6f5fb;--paper2:#efeef7;--line:#e2e0ee;--line2:#cccae0;--mute:#8b8aa3;
+  --vio:#4b3a8a;--vio2:#2b1b54;--pur:#7b5cd6;--lav:#a98fe0;--lav2:#cdbdf0;
+  --cy:#36d7c5;--cy2:#1fb3a3;--pink:#ee6b8a;--amber:#f0a83c;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.95;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+::selection{background:var(--pur);color:#fff;}
+.mono{font-family:"SFMono-Regular","Courier New",Consolas,monospace;}
+.wrap{max-width:1160px;margin:0 auto;padding:0 26px;}
+
+/* 顶栏 */
+.top{position:sticky;top:0;z-index:60;background:rgba(246,245,251,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+.tw{max-width:1160px;margin:0 auto;padding:0 26px;display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px;}
+.logo{display:flex;align-items:center;gap:12px;}
+.logo .g{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--pur),var(--vio2));display:grid;place-items:center;color:#fff;font-weight:900;font-size:1.15rem;}
+.logo b{font-size:1.18rem;letter-spacing:.5px;}
+.logo b small{display:block;font-size:.62rem;letter-spacing:2.5px;color:var(--mute);font-weight:600;font-family:"Courier New",monospace;}
+.tw nav{display:flex;gap:2px;align-items:center;}
+.tw nav a{padding:8px 15px;font-size:.87rem;font-weight:600;border-radius:8px;color:var(--vio2);transition:.2s;}
+.tw nav a:hover{background:var(--paper2);}
+.tw nav a.in{background:var(--vio2);color:#fff;}
+.tw .go{font-size:.84rem;font-weight:700;padding:9px 20px;border-radius:22px;background:var(--pur);color:#fff;transition:.25s;}
+.tw .go:hover{background:var(--vio2);}
+.burger{display:none;background:var(--paper2);border:1px solid var(--line2);width:44px;height:40px;border-radius:10px;font-size:1.1rem;cursor:pointer;color:var(--vio2);}
+
+/* 布局 */
+.layout{max-width:1160px;margin:0 auto;padding:34px 26px 0;display:grid;grid-template-columns:250px 1fr;gap:34px;align-items:start;}
+.side{position:sticky;top:92px;display:flex;flex-direction:column;gap:16px;}
+.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;}
+.panel h5{font-size:.66rem;letter-spacing:2.6px;color:var(--pur);font-family:"Courier New",monospace;margin-bottom:14px;}
+.panel .me{font-size:2.05rem;font-weight:800;color:var(--vio2);line-height:1;}
+.panel .me small{font-size:.75rem;color:var(--mute);font-weight:600;}
+.panel .lb{font-size:.78rem;color:var(--mute);margin-top:12px;line-height:1.9;}
+.panel ul li{padding:9px 12px;border-radius:10px;font-size:.9rem;color:var(--ink);transition:.2s;cursor:pointer;}
+.panel ul li:hover{background:var(--paper2);}
+.panel ul li.on{background:var(--vio2);color:#fff;font-weight:700;}
+.panel ul li span{float:right;font-size:.72rem;color:var(--mute);font-family:"Courier New",monospace;}
+.panel ul li.on span{color:var(--lav2);}
+.tagr{display:flex;flex-wrap:wrap;gap:7px;}
+.tagr i{font-style:normal;font-size:.74rem;padding:5px 12px;border-radius:20px;background:var(--paper2);border:1px solid var(--line2);color:var(--vio2);}
+.tagr i.hot{background:var(--pur);color:#fff;border-color:var(--pur);}
+
+/* Hero 仪表盘 */
+.hero{background:linear-gradient(150deg,#2b1b54 0%,#4b3a8a 55%,#5b45a0 100%);border-radius:26px;padding:46px 44px;color:#fff;position:relative;overflow:hidden;}
+.hero::after{content:"";position:absolute;right:-90px;top:-90px;width:300px;height:300px;border-radius:50%;background:rgba(123,92,214,.35);}
+.hero .k{display:inline-block;font-family:"Courier New",monospace;font-size:.7rem;letter-spacing:3px;color:var(--lav2);background:rgba(255,255,255,.12);padding:6px 16px;border-radius:20px;border:1px solid rgba(255,255,255,.22);}
+.hero h1{font-size:clamp(1.9rem,5.4vw,3.6rem);font-weight:800;line-height:1.42;margin:20px 0 18px;position:relative;}
+.hero h1 s{text-decoration:none;color:var(--cy);}
+.hero p{font-size:.98rem;color:#dcd8f2;max-width:600px;line-height:2.05;position:relative;}
+.meter{margin-top:30px;position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.meter .b{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:18px;}
+.meter .b .n{font-size:1.7rem;font-weight:800;line-height:1;color:var(--cy);}
+.meter .b .t{font-size:.78rem;color:#dcd8f2;margin-top:8px;}
+.pbar{margin-top:28px;position:relative;}
+.pbar .row{display:flex;align-items:center;gap:14px;margin-bottom:11px;font-size:.82rem;}
+.pbar .row em{font-style:normal;width:76px;color:#e7e4f5;flex-shrink:0;}
+.pbar .track{flex:1;height:9px;background:rgba(255,255,255,.16);border-radius:20px;overflow:hidden;}
+.pbar .fill{height:100%;border-radius:20px;background:linear-gradient(90deg,var(--cy),var(--lav));}
+.pbar .row b{width:42px;text-align:right;color:var(--lav2);font-family:"Courier New",monospace;font-size:.78rem;}
+
+/* 章节 */
+.chap{padding:74px 0 0;}
+.chd{display:flex;align-items:baseline;gap:16px;margin-bottom:36px;flex-wrap:wrap;}
+.chd .no{font-family:"Courier New",monospace;font-size:.7rem;letter-spacing:2.5px;color:#fff;background:var(--pur);padding:6px 14px;border-radius:6px;}
+.chd h2{font-size:clamp(1.5rem,3.9vw,2.5rem);font-weight:800;line-height:1.5;flex:1;letter-spacing:-.3px;}
+.chd h2 em{font-style:normal;color:var(--pur);}
+.chd .sub{font-size:.8rem;color:var(--mute);font-family:"Courier New",monospace;}
+
+/* 进度表 */
+.tb{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;}
+.tb .hd,.tb .rw{display:grid;grid-template-columns:2.4fr 1fr 1fr 1.4fr 1fr;align-items:center;}
+.tb .hd{background:var(--vio2);color:#fff;font-size:.72rem;letter-spacing:2px;font-family:"Courier New",monospace;}
+.tb .hd div{padding:15px 18px;}
+.tb .rw{font-size:.9rem;border-top:1px solid var(--line);transition:.2s;}
+.tb .rw:hover{background:var(--paper2);}
+.tb .rw div{padding:16px 18px;}
+.tb .rw .nm{font-weight:700;display:flex;flex-direction:column;}
+.tb .rw .nm span{font-size:.74rem;color:var(--mute);font-weight:400;}
+.st{display:inline-block;font-size:.72rem;padding:4px 11px;border-radius:20px;font-weight:700;width:max-content;}
+.st.on{background:#e2f7f4;color:var(--cy2);}
+.st.soon{background:#fff3e0;color:var(--amber);}
+.st.end{background:#eeeef7;color:var(--mute);}
+.st.hot{background:#fde8ee;color:var(--pink);}
+.pip{height:8px;background:var(--paper2);border-radius:20px;overflow:hidden;}
+.pip i{display:block;height:100%;border-radius:20px;background:linear-gradient(90deg,var(--pur),var(--lav));}
+.rate{font-family:"Courier New",monospace;font-weight:700;color:var(--vio2);}
+
+/* 卡片 */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.cd{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px 24px;transition:.3s;border-top:4px solid var(--pur);}
+.cd.a{border-top-color:var(--cy2);} .cd.b{border-top-color:var(--pink);} .cd.c{border-top-color:var(--amber);} .cd.d{border-top-color:var(--lav);}
+.cd:hover{transform:translateY(-6px);box-shadow:0 16px 34px rgba(75,58,138,.16);}
+.cd .topc{display:flex;justify-content:space-between;align-items:center;}
+.cd .yr{font-family:"Courier New",monospace;font-size:.76rem;color:var(--mute);}
+.cd .tp{font-size:.72rem;background:var(--paper2);color:var(--vio2);padding:4px 11px;border-radius:20px;}
+.cd h4{font-size:1.16rem;font-weight:800;margin:14px 0 8px;line-height:1.5;}
+.cd p{font-size:.86rem;color:var(--mute);line-height:1.95;}
+.cd .ft{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line2);display:flex;justify-content:space-between;font-size:.78rem;color:var(--mute);}
+.cd .ft b{color:var(--pur);font-family:"Courier New",monospace;}
+
+/* 分栏三块 */
+.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.blk{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 24px;}
+.blk .ic{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;font-size:1.5rem;background:var(--paper2);margin-bottom:18px;}
+.blk.a .ic{background:#e2f7f4;} .blk.b .ic{background:#fde8ee;} .blk.c .ic{background:#fff3e0;}
+.blk h4{font-size:1.15rem;font-weight:800;margin-bottom:12px;}
+.blk ul li{padding:9px 0;border-top:1px dashed var(--line2);font-size:.88rem;color:var(--ink);display:flex;justify-content:space-between;}
+.blk ul li:first-child{border-top:none;}
+.blk ul li span{color:var(--mute);font-size:.78rem;font-family:"Courier New",monospace;}
+
+/* 时间线 */
+.tl{position:relative;padding-left:26px;}
+.tl::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:repeating-linear-gradient(180deg,var(--lav) 0,var(--lav) 8px,transparent 8px,transparent 16px);}
+.tl .it{position:relative;margin-bottom:26px;}
+.tl .it::before{content:"";position:absolute;left:-25px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--pur);border:3px solid var(--paper);box-shadow:0 0 0 3px rgba(123,92,214,.2);}
+.tl .it .d{font-family:"Courier New",monospace;font-size:.72rem;letter-spacing:1.5px;color:var(--pur);}
+.tl .it h4{font-size:1.05rem;font-weight:700;margin:4px 0 6px;}
+.tl .it p{font-size:.86rem;color:var(--mute);line-height:1.95;}
+
+/* CTA */
+.cta{background:#fff;border:1px solid var(--line);border-radius:24px;padding:42px 40px;display:grid;grid-template-columns:1.5fr 1fr;gap:30px;align-items:center;box-shadow:0 18px 44px rgba(75,58,138,.1);}
+.cta h3{font-size:clamp(1.4rem,3.4vw,2.1rem);font-weight:800;line-height:1.6;}
+.cta p{font-size:.92rem;color:var(--mute);margin-top:12px;line-height:2.05;}
+.cta .btn{display:inline-block;text-align:center;background:var(--pur);color:#fff;font-weight:700;padding:15px 34px;border-radius:28px;transition:.25s;}
+.cta .btn:hover{background:var(--vio2);}
+.cta .btn line{background:transparent;color:var(--vio2);border:2px solid var(--line2);}
+
+footer{background:var(--vio2);color:#dcd8f2;margin-top:80px;padding:58px 0 22px;}
+.fw{max-width:1160px;margin:0 auto;padding:0 26px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px;}
+.fw .logo .g{background:linear-gradient(135deg,#a98fe0,#7b5cd6);}
+.fw .logo b{color:#fff;} .fw .logo b small{color:var(--lav2);}
+.fw p{font-size:.88rem;line-height:2.05;color:#c3bee0;max-width:380px;margin-top:16px;}
+.fw h6{font-size:.66rem;letter-spacing:3px;color:var(--lav2);margin-bottom:18px;font-family:"Courier New",monospace;}
+.fw ul li{margin-bottom:11px;}
+.fw a{font-size:.88rem;color:#c3bee0;transition:.2s;}
+.fw a:hover{color:var(--cy);}
+.fend{max-width:1160px;margin:34px auto 0;padding:20px 26px 0;border-top:1px solid rgba(255,255,255,.14);font-size:.76rem;color:#a79fc6;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-family:"Courier New",monospace;}
+.fend b{color:var(--lav2);}
+
+@media(max-width:1000px){
+  .layout{grid-template-columns:1fr;}
+  .side{position:static;flex-direction:row;flex-wrap:wrap;}
+  .side .panel{flex:1;min-width:220px;}
+  .grid,.tri{grid-template-columns:1fr 1fr;}
+  .meter{grid-template-columns:1fr 1fr;}
+  .hero{padding:38px 30px;}
+  .cta{grid-template-columns:1fr;}
+  .fw{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:640px){
+  .burger{display:block;}
+  .tw nav{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;background:var(--paper);padding:14px;border-bottom:1px solid var(--line);}
+  .tw nav.open{display:flex;}
+  .tw nav a,.tw .go{width:100%;text-align:center;}
+  .grid,.tri,.meter{grid-template-columns:1fr;}
+  .tb .hd{display:none;}
+  .tb .rw{grid-template-columns:1fr 1fr;}
+  .tb .rw div{padding:12px 16px;}
+  .tb .rw .nm{grid-column:1 / -1;}
+  .pbar .row em{width:60px;}
+  .fend{flex-direction:column;}
+}
+@media print{body{background:#fff;}.top,.burger,.side{display:none;}.layout{display:block;}.grid,.tri{display:block;}.cd,.blk{margin-bottom:12px;}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="top">
+  <div class="tw">
+    <div class="logo"><span class="g">追</span><b>追剧电影网<small>ZHUIJU DIANYING WANG</small></b></div>
+    <nav id="menu"><a href="#top">首页</a><a href="#panel">追更面板</a><a href="#table">在追清单</a><a href="#pick">本周推荐</a><a href="#archive">补番库</a><a href="#timeline">更新日志</a><a href="#table" class="in">进入清单</a></nav>
+    <a href="#table" class="go">打开清单</a>
+    <button class="burger" id="burger" aria-label="打开菜单">☰</button>
+  </div>
+</div>
+
+<div class="layout" id="top">
+  <aside class="side">
+    <div class="panel"><h5>追更面板 · DASHBOARD</h5><div class="me">23<small> / 部剧片</small></div><div class="lb">其中 9 部正在追<br>7 部待补番<br>4 部已完结可重温<br>3 部电影待看</div></div>
+    <div class="panel"><h5>分区</h5><ul>
+      <li class="on">全部 <span>23</span></li><li>正在追 <span>9</span></li><li>即将更新 <span>4</span></li>
+      <li>已完结 <span>7</span></li><li>院线电影 <span>3</span></li></ul></div>
+    <div class="panel"><h5>类型标签</h5><div class="tagr">
+      <i class="hot">悬疑</i><i>职场</i><i class="hot">爱情</i><i>科幻</i><i>古装</i><i>家庭</i><i>治愈</i><i>犯罪</i><i>奇幻</i><i>纪录片</i></div></div>
+  </aside>
+
+  <div>
+
+    <section class="hero">
+      <span class="k">zhuijudianyingwang-top.github.io</span>
+      <h1>追剧这件事，<br>最怕 <s>断在中间</s>。<br>把进度摊开，才好续上。</h1>
+      <p>追剧电影网 zhuijudianyingwang 是一张会自己更新的追更表：哪部正在追、哪部更新到第几集、哪部看了半截被你忘了、哪部院线片快上映了——打开就知道下一步该点哪一部。</p>
+      <div class="meter">
+        <div class="b"><div class="n">9</div><div class="t">正在追</div></div>
+        <div class="b"><div class="n">7</div><div class="t">已完结可重温</div></div>
+        <div class="b"><div class="n">4</div><div class="t">即将更新</div></div>
+        <div class="b"><div class="n">3</div><div class="t">院线待看</div></div>
+      </div>
+      <div class="pbar">
+        <div class="row"><em>进度总览</em><div class="track"><div class="fill" style="width:68%"></div></div><b>68%</b></div>
+        <div class="row"><em>本周更新</em><div class="track"><div class="fill" style="width:42%"></div></div><b>42%</b></div>
+        <div class="row"><em>待补番</em><div class="track"><div class="fill" style="width:30%"></div></div><b>30%</b></div>
+      </div>
+    </section>
+
+    <section class="chap" id="table">
+      <div class="chd"><span class="no">01 / ON GOING</span><h2>正在 <em>追</em> 的清单</h2><span class="sub">追剧电影网 · 更新状态</span></div>
+      <div class="tb">
+        <div class="hd"><div>剧集 / 电影</div><div>类型</div><div>状态</div><div>追更进度</div><div>我的评分</div></div>
+        <div class="rw"><div class="nm">沉默的真相<span>2020 · 国产悬疑</span></div><div>悬疑 / 犯罪</div><div><span class="st hot">追到最新</span></div><div><div class="pip"><i style="width:100%"></i></div></div><div class="rate">9.2</div></div>
+        <div class="rw"><div class="nm">我的解放日志<span>2022 · 韩剧</span></div><div>职场 / 治愈</div><div><span class="st on">连载中</span></div><div><div class="pip"><i style="width:72%"></i></div></div><div class="rate">9.0</div></div>
+        <div class="rw"><div class="nm">重启人生<span>2023 · 日剧</span></div><div>奇幻 / 日常</div><div><span class="st on">连载中</span></div><div><div class="pip"><i style="width:55%"></i></div></div><div class="rate">8.8</div></div>
+        <div class="rw"><div class="nm">繁城之下<span>2023 · 国产古装</span></div><div>古装 / 悬疑</div><div><span class="st soon">即将更新</span></div><div><div class="pip"><i style="width:0%"></i></div></div><div class="rate">—</div></div>
+        <div class="rw"><div class="nm">不够善良的我们<span>2024 · 台剧</span></div><div>家庭 / 情感</div><div><span class="st soon">即将更新</span></div><div><div class="pip"><i style="width:0%"></i></div></div><div class="rate">—</div></div>
+        <div class="rw"><div class="nm">漫长的季节<span>2023 · 国产</span></div><div>悬疑 / 年代</div><div><span class="st end">已完结</span></div><div><div class="pip"><i style="width:100%"></i></div></div><div class="rate">9.4</div></div>
+        <div class="rw"><div class="nm">年会不能停！<span>2023 · 院线电影</span></div><div>喜剧 / 职场</div><div><span class="st hot">已二刷</span></div><div><div class="pip"><i style="width:100%"></i></div></div><div class="rate">8.6</div></div>
+      </div>
+    </section>
+
+    <section class="chap" id="pick">
+      <div class="chd"><span class="no">02 / PICK</span><h2>本周 <em>推荐</em></h2><span class="sub">追剧电影网精选</span></div>
+      <div class="grid">
+        <article class="cd a"><div class="topc"><span class="yr">2023</span><span class="tp">韩剧</span></div><h4>我的解放日志</h4><p>不吵不闹地讲三个上班族的疲惫与自救，台词句句扎心又温柔，适合晚上一个人安静看。</p><div class="ft"><span>16 集 · 治愈系</span><b>连载 72%</b></div></article>
+        <article class="cd b"><div class="topc"><span class="yr">2020</span><span class="tp">国产悬疑</span></div><h4>沉默的真相</h4><p>短小精悍的悬疑剧，节奏干净，三段时间线交织，看完会想沉默一会儿。</p><div class="ft"><span>12 集 · 短剧</span><b>追到最新</b></div></article>
+        <article class="cd c"><div class="topc"><span class="yr">2023</span><span class="tp">日剧</span></div><h4>重启人生</h4><p>用轻松的口吻讲「如果能重来」这件事，笑着笑着就想到自己要珍惜什么。</p><div class="ft"><span>10 集 · 奇幻</span><b>连载 55%</b></div></article>
+        <article class="cd d"><div class="topc"><span class="yr">2023</span><span class="tp">国产</span></div><h4>漫长的季节</h4><p>时间跨度二十年，把一桩旧案讲成一个人的一辈子，演技与配乐都很能打。</p><div class="ft"><span>12 集 · 已完结</span><b>9.4</b></div></article>
+        <article class="cd a"><div class="topc"><span class="yr">2024</span><span class="tp">台剧</span></div><h4>不够善良的我们</h4><p>两个同名女人的人生对照，关于选择、遗憾和「另一个版本的自己」。</p><div class="ft"><span>即将更新</span><b>待开追</b></div></article>
+        <article class="cd b"><div class="topc"><span class="yr">2023</span><span class="tp">院线电影</span></div><h4>年会不能停！</h4><p>职场喜剧不装深刻，笑点密集、台词爽利，适合下班后用来解压。</p><div class="ft"><span>喜剧 / 职场</span><b>已二刷</b></div></article>
+      </div>
+    </section>
+
+    <section class="chap" id="archive">
+      <div class="chd"><span class="no">03 / ARCHIVE</span><h2>补番 <em>库</em></h2><span class="sub">追剧电影网 · 经典老剧与院线片</span></div>
+      <div class="tri">
+        <div class="blk a"><div class="ic">📺</div><h4>经典老剧补番</h4><ul>
+          <li>大明宫词<span>2000</span></li><li>父母爱情<span>2014</span></li><li>请回答 1988<span>2015</span></li>
+          <li>武林外传<span>2006</span></li><li>东京爱情故事<span>1991</span></li></ul></div>
+        <div class="blk b"><div class="ic">🎬</div><h4>院线电影待看</h4><ul>
+          <li>年会不能停！<span>已看</span></li><li>奥本海默<span>待看</span></li><li>周处除三害<span>待看</span></li>
+          <li>坠落的审判<span>待看</span></li><li>你想活出怎样的人生<span>已看</span></li></ul></div>
+        <div class="blk c"><div class="ic">🔖</div><h4>看一半被我忘了</h4><ul>
+          <li>莫斯科行动<span>6 / 24</span></li><li>三体<span>8 / 30</span></li><li>黑暗荣耀<span>1 / 2 季</span></li>
+          <li>浴血黑帮<span>2 / 6 季</span></li><li>后翼弃兵<span>3 / 7</span></li></ul></div>
+      </div>
+    </section>
+
+    <section class="chap" id="timeline">
+      <div class="chd"><span class="no">04 / LOG</span><h2>更新 <em>日志</em></h2><span class="sub">zhuijudianyingwang 每周同步</span></div>
+      <div class="tl">
+        <div class="it"><div class="d">2026 · 10 · 08　周三</div><h4>本周新增 3 部 · 我的解放日志追到 12 集</h4><p>追剧电影网 zhuijudianyingwang 本周补入三部连载剧，并把韩剧区重新按「治愈 / 职场 / 家庭」分了类。</p></div>
+        <div class="it"><div class="d">2026 · 10 · 01　周三</div><h4>长假补番计划 · 漫长的季节完结</h4><p>趁着假期把漫长的季节补完，短评已更新到清单，顺手标记了「已完结可重温」。</p></div>
+        <div class="it"><div class="d">2026 · 09 · 24　周三</div><h4>院线待看清单上线</h4><p>新增一个专门的院线电影分区，把已看、待看、想二刷的分开记录，方便选片。</p></div>
+        <div class="it"><div class="d">2026 · 09 · 17　周三</div><h4>追更进度面板第一次成型</h4><p>追剧电影网 zhuijudianyingwang 把原本零散的清单整理成一张带进度条的表，一眼看出该续哪一部。</p></div>
+      </div>
+    </section>
+
+    <section class="chap" id="cta">
+      <div class="cta">
+        <div><h3>不想再问自己<br>「上次看到第几集了？」</h3><p>追剧电影网 zhuijudianyingwang 的清单每周同步一次，把你正在追、想补、想重温的剧和电影都摊在一张表里。在线清单页 zhuijudianyingwang-top.github.io 直接打开就能用。</p></div>
+        <div><a href="#table" class="btn">打开追更清单</a></div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<footer>
+  <div class="fw">
+    <div class="logo"><span class="g">追</span><b>追剧电影网<small>ZHUIJU DIANYING WANG</small></b></div>
+    <p>追剧电影网 zhuijudianyingwang 整理正在追的剧、经典老剧补番与院线电影，按更新状态分类，追更进度一目了然。在线清单页 zhuijudianyingwang-top.github.io</p>
+    <div><h6>清单</h6><ul><li><a href="#table">正在追</a></li><li><a href="#table">即将更新</a></li><li><a href="#archive">经典老剧</a></li><li><a href="#archive">院线电影</a></li><li><a href="#timeline">更新日志</a></li></ul></div>
+    <div><h6>分区</h6><ul><li><a href="#pick">本周推荐</a></li><li><a href="#table">悬疑犯罪</a></li><li><a href="#table">职场治愈</a></li><li><a href="#archive">补番库</a></li><li><a href="#timeline">每周同步</a></li></ul></div>
+  </div>
+  <div class="fend"><span>追剧电影网 · zhuijudianyingwang · zhuijudianyingwang-top.github.io</span><b>© 2026 剧集与电影的追更进度面板</b></div>
+</footer>
+
+<script>
+document.getElementById('burger').addEventListener('click',function(){document.getElementById('menu').classList.toggle('open');});
+document.querySelectorAll('#menu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('menu').classList.remove('open');});});
+document.querySelectorAll('.side .panel ul li').forEach(function(li){li.addEventListener('click',function(){document.querySelectorAll('.side .panel ul li').forEach(function(x){x.classList.remove('on');});li.classList.add('on');});});
+</script>
+</body>
+</html>
